@@ -2,16 +2,31 @@
 const homelist = function(req, res){
 res.render('index', { title: 'E-Food' });
 };
-/* GET 'Location info' page */
-const locationInfo = function(req, res){
-res.render('index', { title: 'Location info' });
+/* GET 'register Info' page */
+const registerInfo = function(req, res){
+res.render('index', { title: 'Register' });
 };
-/* GET 'Add review' page */
-const addReview = function(req, res){
-res.render('index', { title: 'Add review' });
+
+/* GET 'login Info' page */
+const loginInfo = function(req, res){
+res.render('index', { title: 'Login' });
 };
+
+/* GET 'foods Info' page */
+const foodsInfo = function(req, res){
+res.render('index', { title: 'Foods' });
+};
+
+/* GET 'cart Info' page */
+const cartInfo = function(req, res){
+res.render('index', { title: 'Cart' });
+};
+
+
 module.exports = {
 homelist,
-locationInfo,
-addReview
+registerInfo,
+loginInfo,
+foodsInfo,
+cartInfo
 };

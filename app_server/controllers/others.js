@@ -6,28 +6,25 @@ module.exports = {
 index 
 };
 
-/* GET home page */
-const about = function(req, res){
-  res.render('index', { title: 'About' });
+/* GET register page */
+const register = function(req, res){
+  res.render('index', { title: 'Register' });
 };
 
 /* GET login page */
 const login = function(req, res){
-  res.render('index', { title: 'login' });
+  res.render('index', { title: 'Login' });
 };
 
-/* GET register page */
-const register = function(req, res){
-  res.render('index', { title: 'register' });
-};
-
-/* GET food page */
-const food = function(req, res){
-  res.render('index', { title: 'food' });
+/* GET foods page */
+const foods = function(req, res){
+  res.render('index', { title: 'Foods' });
 };
 
 module.exports = {
-  about
+  register,
+  login,
+  foods
 };
 
 
